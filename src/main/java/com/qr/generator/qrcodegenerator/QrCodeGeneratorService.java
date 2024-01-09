@@ -25,7 +25,7 @@ public class QrCodeGeneratorService {
 
         MatrixToImageWriter.writeToStream(bitMatrix,"PNG",pngOutPutStream,matrixToImageConfig);
         byte[] pngData = pngOutPutStream.toByteArray();
-        log.info("QR code generated : {]",text);
+        log.info("QR code generated : {}",text);
         return pngData;
     }
 
